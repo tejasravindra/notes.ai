@@ -14,8 +14,8 @@ Welcome to Notes.ai, an intelligent note-taking application designed to enhance 
 - **[OpenAI](https://www.openai.com/)**: AI models for generating and summarizing content.
 - **[Pinecone](https://www.pinecone.io/)**: Managed vector database for scalable, accurate search.
 - **[MongoDB](https://www.mongodb.com/)**: Document-based database for flexible, scalable data storage.
-- **[Shadcn UI](https://shadcn.com/)**: Modern UI library for React.
-- **[Clerk](https://clerk.dev/)**: User management and authentication tailored for modern applications.
+- **[Shadcn UI](https://ui.shadcn.com/)**: Modern UI library for React.
+- **[Clerk](https://clerk.com/)**: User management and authentication tailored for modern applications.
 
 ## Getting Started
 
@@ -40,6 +40,42 @@ npm install
 # or
 yarn install
 ```
+
+### Environment Setup
+Before running the application, you need to set up your environment variables. Create a `.env` file in the root directory of the project and add the following keys with appropriate values:
+```env
+# MongoDB URL 
+DATABASE_URL=""
+
+# Clerk Keys
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+# Clerk Routing URLs:
+## The URL where users are redirected to sign in.
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+## The URL where users are redirected to sign up.
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+## The URL where users are redirected after successfully signing in.
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
+## The URL where users are redirected after successfully signing up.
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+
+# OpenAI API Key
+OPENAI_API_KEY=""
+
+# Pinecone API Key
+PINECONE_API_KEY="" 
+```
+#### MongoDB
+* For DATABASE_URL, set up a new database on MongoDB and use the connection string provided.
+#### Clerk
+* For CLERK_SECRET_KEY & NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, create a new application on Clerk and go to API Keys.
+* Keep Clerk's routing URLs as is. These help manage the flow of user authentication and post-authentication navigation within the app.
+#### OpenAI
+* For OPENAI_API_KEY, obtain the key through your account on OpenAI Platform.
+#### Pinecone
+* For PINECONE_API_KEY, create a new vector database at Pinecone to obtain the API key.
 
 ### Running the Application
 
