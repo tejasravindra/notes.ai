@@ -13,6 +13,7 @@ Welcome to Notes.ai, an intelligent note-taking application designed to enhance 
 - **[Next.js](https://nextjs.org/)**: The React framework for production.
 - **[OpenAI](https://www.openai.com/)**: AI models for generating and summarizing content.
 - **[Pinecone](https://www.pinecone.io/)**: Managed vector database for scalable, accurate search.
+- **[MongoDB](https://www.mongodb.com/)**: Document-based database for flexible, scalable data storage.
 - **[Shadcn UI](https://shadcn.com/)**: Modern UI library for React.
 - **[Clerk](https://clerk.dev/)**: User management and authentication tailored for modern applications.
 
@@ -33,3 +34,28 @@ Clone the repository:
 git clone https://github.com/yourgithub/notes.ai.git
 cd notes.ai
 ```
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Running the Application
+
+To run the app locally:
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open http://localhost:3000 with your browser to see the result.
+
+## Acknowledgements
+* OpenAI Team for their support and APIs
+* Pinecone for their powerful search solutions
+* Clerk for secure and seamless authentication
+* Shadcn UI for the elegant design system
+
+
+Thank you for choosing Notes.ai - your smart companion for effective note-taking!
